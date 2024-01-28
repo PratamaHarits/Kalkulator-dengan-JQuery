@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator JQuery</title>
+    <style>
+        .container{
+            margin-top: 20px;
+            display: flex;
+            /* agar ketengah */
+            justify-content: space-around;
+        }
+        .card{
+            height: 590px;
+            width: 350px;
+            border: 1px solid black;
+        }
+        .cardHeader{
+            text-align: center;
+        }
+        .cardBody{
+            /* agar cardBodyNumber ketengah*/
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .cardBodyNumber{
+            height: 50px;
+            width: 50px;
+            margin: 10px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 50px;
+            /* agar 3 kotak per-baris */
+            flex-basis: calc(33.333% - 20px);
+            box-sizing: border-box;
+        }
+        .cardFooter{
+            text-align: center;
+        }
+        .buttonAritmatika{
+            height: 50px;
+            width: 50px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .aritmatikaResult{
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="cardHeader">
+                <h4>KALKULATOR</h4>
+                <hr>
+            </div>
+            <div class="cardBody">
+                <div class="cardBodyNumber">1</div>
+                <div class="cardBodyNumber">2</div>
+                <div class="cardBodyNumber">3</div>
+                <div class="cardBodyNumber">4</div>
+                <div class="cardBodyNumber">5</div>
+                <div class="cardBodyNumber">6</div>
+                <div class="cardBodyNumber">7</div>
+                <div class="cardBodyNumber">8</div>
+                <div class="cardBodyNumber">9</div>
+                <div class="cardBodyNumber">0</div>
+            </div>
+            <div class="cardFooter">
+                <hr>
+                <button class="buttonAritmatika" id="kali">X</button>
+                <button class="buttonAritmatika" id="bagi">/</button>
+                <button class="buttonAritmatika" id="tambah">+</button>
+                <button class="buttonAritmatika" id="kurang">-</button>
+                <button class="buttonAritmatika" id="clear">C</button>
+                <button class="buttonAritmatika" id="hasil">=</button>
+                <hr>
+                <h1 id="aritmatikaResult"></h1>
+            </div>
+        </div>
+    </div>
+   
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script src="fileJS.js"></script>
+</body>
+</html>
